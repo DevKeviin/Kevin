@@ -106,7 +106,7 @@ bot_id = token:match("(%d+)")
 Id_Dev = sudos.Id_DevKevin
 Ids_Dev = {sudos.Id_DevKevin,bot_id}
 Ids_Dev = {sudos.Id_DevKevin,114518657,bot_id}
-Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كيفن"
+Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كاسبر"
 ------------------------------------------------------------------------------------------------------------
 function var(value)  
 print(serpent.block(value, {comment=false}))   
@@ -5962,7 +5962,7 @@ send(msg.chat_id_, msg.id_,[[
 ⌔︙`#game` » عدد المجوهرات
 ⌔︙`#AddMem` » عدد الجهات
 ⌔︙`#Description` » تعليق الصوره
-⌔︙ قناة الكلايش • @coxonn
+⌔︙ قناة الكلايش • @Gverr
 ]])
 return false  
 elseif text == 'تغير الايدي' and Owner(msg) then 
@@ -6479,7 +6479,7 @@ send(msg.chat_id_, msg.id_,[[
 
 𓂅 . [Source Info ](t.me/X04XX)     
 
-𓂅 . [Kevin iD](t.me/Wt_5m)     
+𓂅 . [Kevin iD](t.me/Gverr)     
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 𓂅 . [TWS Kevin](t.me/Tsh0bot)     
