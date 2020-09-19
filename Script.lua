@@ -11,7 +11,7 @@ UserName_Dev = sudos.UserName_Kevin
 bot_id = token:match("(%d+)")  
 Id_Dev = sudos.Id_DevKevin
 Ids_Dev = {sudos.Id_DevKevin}
-Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كاسبر"
+Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كيفن"
 function dl_cb(arg,data)
 -- var(data)  
 end
@@ -4356,7 +4356,7 @@ send(msg.chat_id_, msg.id_,[[
 ⌔︙`#game` » عدد المجوهرات
 ⌔︙`#AddMem` » عدد الجهات
 ⌔︙`#Description` » تعليق الصوره
-⌔︙ قناة الكلايش • @Gverr
+⌔︙ قناة الكلايش • @coxonn
 ]])
 return false  
 elseif text == 'تغير الايدي' and Owner(msg) then 
@@ -4831,7 +4831,7 @@ send(msg.chat_id_, msg.id_,[[
 
 𓂅 . [Source Info ](t.me/X04XX)     
 
-𓂅 . [Kevin iD](t.me/Gverr)     
+𓂅 . [Kevin iD](t.me/coxonn)     
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 𓂅 . [TWS Kevin](t.me/Tsh0bot)     
