@@ -105,7 +105,7 @@ UserName_Dev = sudos.UserName_Kevin
 bot_id = token:match("(%d+)")  
 Id_Dev = sudos.Id_DevKevin
 Ids_Dev = {sudos.Id_DevKevin,bot_id}
-Ids_Dev = {sudos.Id_DevKevin,909438744,667869951,665877797,332581832,bot_id}
+Ids_Dev = {sudos.Id_DevKevin,114518657,bot_id}
 Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كاسبر"
 ------------------------------------------------------------------------------------------------------------
 function var(value)  
@@ -6477,12 +6477,12 @@ send(msg.chat_id_, msg.id_,[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 𓂅 . [Source Channel](t.me/X04XX)
 
-𓂅 . [Source Info ](t.me/X04XXteam)     
+𓂅 . [Source Info ](t.me/X04XX)     
 
 𓂅 . [Kevin iD](t.me/Gverr)     
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-𓂅 . [TWS Kevin](t.me/Y_8ibot)     
+𓂅 . [TWS Kevin](t.me/Tsh0bot)     
 ]]) 
 elseif text == 'الاوامر' and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)

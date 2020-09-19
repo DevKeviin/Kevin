@@ -4829,12 +4829,12 @@ send(msg.chat_id_, msg.id_,[[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 𓂅 . [Source Channel](t.me/X04XX)
 
-𓂅 . [Source Info ](t.me/X04XXteam)     
+𓂅 . [Source Info ](t.me/X04XX)     
 
 𓂅 . [Kevin iD](t.me/Gverr)     
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-𓂅 . [TWS Kevin](t.me/Y_8ibot)     
+𓂅 . [TWS Kevin](t.me/Tsh0bot)     
 ]]) 
 elseif text == 'الاوامر' and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
