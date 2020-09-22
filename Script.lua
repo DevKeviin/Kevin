@@ -11,7 +11,7 @@ UserName_Dev = sudos.UserName_Kevin
 bot_id = token:match("(%d+)")  
 Id_Dev = sudos.Id_DevKevin
 Ids_Dev = {sudos.Id_DevKevin}
-Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كيفن"
+Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كاسبر"
 function dl_cb(arg,data)
 -- var(data)  
 end
@@ -3529,6 +3529,12 @@ f:write(test)
 f:close()
 sendDocument(msg.chat_id_, msg.id_,'./Link_Groups.txt', '\nLink_Groups.txt')
 elseif text == "الرابط" then 
+local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
+data = JSON.decode(url)
+if data.Ch_Member.infoo ~= true then
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+return false
+end
 local status_Link = redis:get(bot_id.."Link_Group"..msg.chat_id_)
 if status_Link == true then
 send(msg.chat_id_, msg.id_,"⌔︙جلب الرابط معطل") 
@@ -4350,7 +4356,7 @@ send(msg.chat_id_, msg.id_,[[
 ⌔︙`#game` » عدد المجوهرات
 ⌔︙`#AddMem` » عدد الجهات
 ⌔︙`#Description` » تعليق الصوره
-⌔︙ قناة الكلايش • @coxonn
+⌔︙ قناة الكلايش • @Gverr
 ]])
 return false  
 elseif text == 'تغير الايدي' and Owner(msg) then 
@@ -4415,6 +4421,12 @@ redis:set(bot_id.."Set:Id:Group"..msg.chat_id_,Text_Rand)
 send(msg.chat_id_, msg.id_,'⌔︙ تم تغير الايدي ارسل ايدي لرؤيته')
 end
 if text == 'ايدي' and tonumber(msg.reply_to_message_id_) == 0 and not redis:get(bot_id..'Status:Lock:Id:Photo'..msg.chat_id_) then
+local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
+data = JSON.decode(url)
+if data.Ch_Member.infoo ~= true then
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+return false
+end
 tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,taha,success) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ then
@@ -4819,7 +4831,7 @@ send(msg.chat_id_, msg.id_,[[
 
 𓂅 . [Source Info ](t.me/X04XX)     
 
-𓂅 . [Kevin iD](t.me/coxonn)     
+𓂅 . [Kevin iD](t.me/Gverr)     
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 𓂅 . [TWS Kevin](t.me/Tsh0bot)     
