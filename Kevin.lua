@@ -2177,7 +2177,7 @@ Files = '⌔︙ لا توجد ملفات في البوت '
 end
 send(msg.chat_id_, msg.id_,Files)
 elseif text == "متجر الملفات" or text == 'المتجر' then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/DevKeviin/Files_DevKeviin/master/getfile.json")
+local Get_Files, res = https.request("https://github.com/DevKeviin/Files_DevKeviin")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 if Get_info then
@@ -5972,7 +5972,7 @@ local List = {
 𝟔𝟔𝟔 𖡋 #username • 𖣰💞
 𝟔𝟔𝟔 𖡋  #stast •𖣰💞
 𝟔𝟔𝟔 𖡋 #id • 𖣰💞
-𝟔𝟔𝟔 𖡋 #gmas • 𖣰💞
+𝟔??𝟔 𖡋 #gmas • 𖣰💞
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰💞
 ]],
 [[
