@@ -106,7 +106,7 @@ bot_id = token:match("(%d+)")
 Id_Dev = sudos.Id_DevKevin
 Ids_Dev = {sudos.Id_DevKevin,bot_id}
 Ids_Dev = {sudos.Id_DevKevin,114518657,bot_id}
-Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كاسبر"
+Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كيفن"
 ------------------------------------------------------------------------------------------------------------
 function var(value)  
 print(serpent.block(value, {comment=false}))   
@@ -2177,7 +2177,7 @@ Files = '⌔︙ لا توجد ملفات في البوت '
 end
 send(msg.chat_id_, msg.id_,Files)
 elseif text == "متجر الملفات" or text == 'المتجر' then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/BotKevin/Files_Kevin/master/getfile.json")
+local Get_Files, res = https.request("https://github.com/DevKeviin/Files_DevKeviin")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 if Get_info then
@@ -5135,12 +5135,6 @@ f:write(test)
 f:close()
 sendDocument(msg.chat_id_, msg.id_,'./Link_Groups.txt', '\nLink_Groups.txt')
 elseif text == "الرابط" then 
-local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
-data = JSON.decode(url)
-if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
-return false
-end
 local status_Link = redis:get(bot_id.."Link_Group"..msg.chat_id_)
 if status_Link then
 send(msg.chat_id_, msg.id_,"⌔︙جلب الرابط معطل") 
@@ -5978,7 +5972,7 @@ local List = {
 𝟔𝟔𝟔 𖡋 #username • 𖣰💞
 𝟔𝟔𝟔 𖡋  #stast •𖣰💞
 𝟔𝟔𝟔 𖡋 #id • 𖣰💞
-𝟔𝟔𝟔 𖡋 #gmas • 𖣰💞
+𝟔𝟔𝟔 𖡋 #gmas • 𖣰??
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰💞
 ]],
 [[
@@ -6027,12 +6021,6 @@ redis:set(bot_id.."Set:Id:Group"..msg.chat_id_,Text_Rand)
 send(msg.chat_id_, msg.id_,'⌔︙ تم تغير الايدي ارسل ايدي لرؤيته')
 end
 if text == 'ايدي' and tonumber(msg.reply_to_message_id_) == 0 and not redis:get(bot_id..'Status:Lock:Id:Photo'..msg.chat_id_) then
-local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
-data = JSON.decode(url)
-if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
-return false
-end
 tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,taha,success) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ then
@@ -6479,7 +6467,7 @@ send(msg.chat_id_, msg.id_,[[
 
 𓂅 . [Source Info ](t.me/X04XX)     
 
-𓂅 . [Kevin iD](t.me/@coxonn)     
+𓂅 . [Kevin iD](t.me/coxonn)     
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 𓂅 . [TWS Kevin](t.me/Tsh0bot)     
