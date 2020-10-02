@@ -2206,7 +2206,7 @@ send(msg.chat_id_,msg.id_,"⌔︙تم مسح جميع ملفات المفعله"
 elseif text and text:match("^(تعطيل ملف) (.*)(.lua)$") then
 local File_Get = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local File_Name = File_Get[2]..'.lua'
-local Get_Json, Res = https.request("https://raw.githubusercontent.com/DevKeviin/Files_DevKeviin/master/Files_Kevin/"..File_Name)
+local Get_Json, Res = https.request("https://raw.githubusercontent.com/DevKeviin/Files_DevKeviin/master/Files_DevKeviin/"..File_Name)
 if Res == 200 then
 os.execute("rm -fr Files/"..File_Name)
 send(msg.chat_id_, msg.id_,"\n⌔︙الملف ← *"..File_Name.."*\n⌔︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -2217,7 +2217,7 @@ end
 elseif text and text:match("^(تفعيل ملف) (.*)(.lua)$") then
 local File_Get = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local File_Name = File_Get[2]..'.lua'
-local Get_Json, Res = https.request("https://raw.githubusercontent.com/DevKeviin/Files_DevKeviin/master/Files_Kevin/"..File_Name)
+local Get_Json, Res = https.request("https://raw.githubusercontent.com/DevKeviin/Files_DevKeviin/master/Files_DevKeviin/"..File_Name)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..File_Name,'w+')
 ChekAuto:write(Get_Json)
@@ -6467,7 +6467,7 @@ send(msg.chat_id_, msg.id_,[[
 
 𓂅 . [Source Info ](t.me/X04XX)     
 
-𓂅 . [Kevin iD](t.me/coxonn)     
+?? . [Kevin iD](t.me/coxonn)     
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 𓂅 . [TWS Kevin](t.me/Tsh0bot)     
