@@ -3428,7 +3428,6 @@ elseif text == ("رفع ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
