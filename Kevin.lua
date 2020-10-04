@@ -106,7 +106,7 @@ bot_id = token:match("(%d+)")
 Id_Dev = sudos.Id_DevKevin
 Ids_Dev = {sudos.Id_DevKevin,bot_id}
 Ids_Dev = {sudos.Id_DevKevin,114518657,bot_id}
-Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كاسبر"
+Name_Bot = redis:get(bot_id.."Redis:Name:Bot") or "كيفن"
 ------------------------------------------------------------------------------------------------------------
 function var(value)  
 print(serpent.block(value, {comment=false}))   
@@ -2307,11 +2307,11 @@ if text == '/start' then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 if Dev_Kevin(msg) then
-local Text_keyboard = '⌔︙اهلا بيك عزيزي ⸼ .\n⌔︙انت المطور الاساسي للبوت 𖧧.\n⌔︙تستطيع التحكم باوامر البوت 𖧧.\n⌔︙من خلال الكيبورد الخاص بك 𖧧.\n⌔︙قناة السورس ◝ @X04XX ◟ .'
+local Text_keyboard = '⌔︙اهلا بيك عزيزي ⸼ .\n⌔︙انت المطور الاساسي للبوت 𖧧.\n⌔︙تستطيع التحكم باوامر البوت 𖧧.\n⌔︙من خلال الكيبورد الخاص بك 𖧧.\n⌔︙قناة السورس ◝  ◟ .'
 local List_keyboard = {
 {'تفعيل تواصل البوت 🔔','تعطيل تواصل البوت 🔕'},
 {'اذاعه خاص 👤','اذاعه للمجموعات 👥'},
@@ -2767,7 +2767,7 @@ if text == ("اضف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and D
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 function FunctionStatus(arg, result)
@@ -2781,7 +2781,7 @@ if text == ("حذف مطور") and tonumber(msg.reply_to_message_id_) ~= 0 and D
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 function FunctionStatus(arg, result)
@@ -2795,7 +2795,7 @@ if text and text:match("^اضف مطور @(.*)$") and Dev_Kevin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 function FunctionStatus(arg, result)
@@ -2817,7 +2817,7 @@ if text and text:match("^حذف مطور @(.*)$") and Dev_Kevin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 function FunctionStatus(arg, result)
@@ -2835,7 +2835,7 @@ if text and text:match("^اضف مطور (%d+)$") and Dev_Kevin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:sadd(bot_id.."Developer:Bot", text:match("^اضف مطور (%d+)$"))
@@ -2846,7 +2846,7 @@ if text and text:match("^حذف مطور (%d+)$") and Dev_Kevin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:srem(bot_id.."Developer:Bot", text:match("^حذف مطور (%d+)$"))
@@ -2926,7 +2926,7 @@ if text == ("مسح قائمه العام") and Dev_Kevin(msg) or text == ("مس
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."Removal:User:Groups")
@@ -2935,7 +2935,7 @@ elseif text == ("مسح المطورين") and Dev_Kevin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."Developer:Bot")
@@ -2944,7 +2944,7 @@ elseif text == ("مسح المنشئين الاساسين") and DeveloperBot(msg
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."President:Group"..msg.chat_id_)
@@ -2955,7 +2955,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."President:Group"..msg.chat_id_)
@@ -2966,7 +2966,7 @@ elseif text == ("مسح المنشئين") and PresidentGroup(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."Constructor:Group"..msg.chat_id_)
@@ -2975,7 +2975,7 @@ elseif text == ("مسح المدراء") and Constructor(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."Manager:Group"..msg.chat_id_)
@@ -2984,7 +2984,7 @@ elseif text == ("مسح الادمنيه") and Owner(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."Admin:Group"..msg.chat_id_)
@@ -2993,7 +2993,7 @@ elseif text == ("مسح المميزين") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."Vip:Group"..msg.chat_id_)
@@ -3002,7 +3002,7 @@ elseif text == ("مسح المكتومين") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."Silence:User:Group"..msg.chat_id_)
@@ -3011,7 +3011,7 @@ elseif text == ("مسح المحظورين") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:del(bot_id.."Removal:User:Group"..msg.chat_id_)
@@ -3020,7 +3020,7 @@ elseif text == "حذف الاوامر المضافه" and Constructor(msg) or te
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 local list = redis:smembers(bot_id.."Command:List:Group"..msg.chat_id_)
@@ -3033,7 +3033,7 @@ elseif text == "مسح الصلاحيات" and Constructor(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 local list = redis:smembers(bot_id.."Validitys:Group"..msg.chat_id_)
@@ -3043,7 +3043,7 @@ elseif text == ("قائمه العام") and Dev_Kevin(msg) or text == ("الم�
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 local list = redis:smembers(bot_id.."Removal:User:Groups")
@@ -3064,7 +3064,7 @@ elseif text == ("المطورين") and Dev_Kevin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 local list = redis:smembers(bot_id.."Developer:Bot")
@@ -3085,7 +3085,7 @@ elseif text == "المنشئين الاساسين" and DeveloperBot(msg) or text
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 local list = redis:smembers(bot_id.."President:Group"..msg.chat_id_)
@@ -3108,7 +3108,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 local list = redis:smembers(bot_id.."President:Group"..msg.chat_id_)
@@ -3131,7 +3131,7 @@ elseif text == ("المنشئين") and PresidentGroup(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 local list = redis:smembers(bot_id.."Constructor:Group"..msg.chat_id_)
@@ -3152,7 +3152,7 @@ elseif text == ("المدراء") and Constructor(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 local list = redis:smembers(bot_id.."Manager:Group"..msg.chat_id_)
@@ -3173,7 +3173,7 @@ elseif text == ("الادمنيه") and Owner(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 local list = redis:smembers(bot_id.."Admin:Group"..msg.chat_id_)
@@ -3270,7 +3270,7 @@ elseif text == "تاك للكل" and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,taha)
@@ -3290,7 +3290,7 @@ elseif text == ("حظر عام") and tonumber(msg.reply_to_message_id_) ~= 0 and
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 function FunctionStatus(arg, result)
@@ -3311,7 +3311,7 @@ elseif text == ("الغاء العام") and tonumber(msg.reply_to_message_id_) 
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 function FunctionStatus(arg, result)
@@ -3324,7 +3324,7 @@ elseif text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 function FunctionStatus(arg, result)
@@ -3336,7 +3336,7 @@ elseif text == ("تنزيل منشئ اساسي") and tonumber(msg.reply_to_mess
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3348,7 +3348,7 @@ elseif text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
@@ -3366,7 +3366,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3380,7 +3380,7 @@ elseif text == "رفع منشئ" and tonumber(msg.reply_to_message_id_) ~= 0 and
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3392,7 +3392,7 @@ elseif text and text:match("^تنزيل منشئ$") and tonumber(msg.reply_to_me
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3404,7 +3404,7 @@ elseif text == ("رفع مدير") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3416,7 +3416,7 @@ elseif text == ("تنزيل مدير") and tonumber(msg.reply_to_message_id_) ~=
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3428,7 +3428,7 @@ elseif text == ("رفع ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -3444,7 +3444,7 @@ elseif text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~=
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3456,7 +3456,7 @@ elseif text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 a
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -3472,7 +3472,7 @@ elseif text == ("تنزيل مميز") and tonumber(msg.reply_to_message_id_) ~=
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3484,7 +3484,7 @@ elseif text == ("حظر") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if not Constructor(msg) and redis:get(bot_id.."Status:Lock:Ban:Group"..msg.chat_id_) then 
@@ -3515,7 +3515,7 @@ elseif text == ("الغاء حظر") and tonumber(msg.reply_to_message_id_) ~= 0
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3532,7 +3532,7 @@ elseif text == ("كتم") and msg.reply_to_message_id_ ~= 0 and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if msg.can_be_deleted_ == false then 
@@ -3552,7 +3552,7 @@ elseif text == ("الغاء كتم") and tonumber(msg.reply_to_message_id_) ~= 0
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3564,7 +3564,7 @@ elseif text == ("الغاء تقيد") and tonumber(msg.reply_to_message_id_) ~=
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3580,7 +3580,7 @@ elseif text == ("تقيد") and tonumber(msg.reply_to_message_id_) ~= 0 and Admi
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3600,7 +3600,7 @@ elseif text and text:match("^حظر عام @(.*)$") and Dev_Kevin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3628,7 +3628,7 @@ elseif text and text:match("^الغاء العام @(.*)$") and Dev_Kevin(msg) t
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3645,7 +3645,7 @@ elseif text and text:match("^رفع منشئ اساسي @(.*)$") and DeveloperBo
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3665,7 +3665,7 @@ elseif text and text:match("^تنزيل منشئ اساسي @(.*)$") and Develop
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3683,7 +3683,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3708,7 +3708,7 @@ if da.status_.ID == "ChatMemberStatusCreator" then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3727,7 +3727,7 @@ elseif text and text:match("^رفع منشئ @(.*)$") and PresidentGroup(msg) th
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3747,7 +3747,7 @@ elseif text and text:match("^تنزيل منشئ @(.*)$") and PresidentGroup(msg
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3763,7 +3763,7 @@ elseif text and text:match("^رفع مدير @(.*)$") and Constructor(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3783,7 +3783,7 @@ elseif text and text:match("^تنزيل مدير @(.*)$") and Constructor(msg) t
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3799,7 +3799,7 @@ elseif text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -3823,7 +3823,7 @@ elseif text and text:match("^تنزيل ادمن @(.*)$") and Owner(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3839,7 +3839,7 @@ elseif text and text:match("^رفع مميز @(.*)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -3863,7 +3863,7 @@ elseif text and text:match("^تنزيل مميز @(.*)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -3969,7 +3969,7 @@ elseif text and text:match("^حظر @(.*)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if not Constructor(msg) and redis:get(bot_id.."Status:Lock:Ban:Group"..msg.chat_id_) then 
@@ -4008,7 +4008,7 @@ elseif text and text:match("^الغاء حظر @(.*)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -4029,7 +4029,7 @@ elseif text and text:match("^كتم @(.*)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if msg.can_be_deleted_ == false then 
@@ -4057,7 +4057,7 @@ elseif text and text:match("^الغاء كتم @(.*)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -4073,7 +4073,7 @@ elseif text and text:match("^تقيد @(.*)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -4137,7 +4137,7 @@ elseif text and text:match("^الغاء تقيد @(.*)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 function FunctionStatus(arg, result)
@@ -4157,7 +4157,7 @@ elseif text and text:match("^طرد @(.*)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if msg.can_be_deleted_ == false then 
@@ -4195,7 +4195,7 @@ elseif text and text:match("^حظر عام (%d+)$") and Dev_Kevin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if Dev_Kevin_User(text:match("^حظر عام (%d+)$")) == true then
@@ -4212,7 +4212,7 @@ elseif text and text:match("^الغاء العام (%d+)$") and Dev_Kevin(msg) t
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 redis:srem(bot_id.."Removal:User:Groups", text:match("^الغاء العام (%d+)$"))
@@ -4223,7 +4223,7 @@ if text and text:match("^رفع منشئ اساسي (%d+)$") and DeveloperBot(ms
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 redis:sadd(bot_id.."President:Group"..msg.chat_id_, text:match("^رفع منشئ اساسي (%d+)$") )
@@ -4232,7 +4232,7 @@ elseif text and text:match("^تنزيل منشئ اساسي (%d+)$") and Develop
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 redis:srem(bot_id.."President:Group"..msg.chat_id_, text:match("^تنزيل منشئ اساسي (%d+)$") )
@@ -4241,7 +4241,7 @@ elseif text and text:match("^رفع منشئ (%d+)$") and PresidentGroup(msg) th
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 redis:sadd(bot_id.."Constructor:Group"..msg.chat_id_, text:match("^رفع منشئ (%d+)$"))
@@ -4250,7 +4250,7 @@ elseif text and text:match("^تنزيل منشئ (%d+)$") and PresidentGroup(msg
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 redis:srem(bot_id.."Constructor:Group"..msg.chat_id_, text:match("^تنزيل منشئ (%d+)$"))
@@ -4259,7 +4259,7 @@ elseif text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 redis:sadd(bot_id.."Manager:Group"..msg.chat_id_, text:match("^رفع مدير (%d+)$") )
@@ -4268,7 +4268,7 @@ elseif text and text:match("^تنزيل مدير (%d+)$") and Constructor(msg) t
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 redis:srem(bot_id.."Manager:Group"..msg.chat_id_, text:match("^تنزيل مدير (%d+)$") )
@@ -4277,7 +4277,7 @@ elseif text and text:match("^رفع ادمن (%d+)$") and Owner(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -4290,7 +4290,7 @@ elseif text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 redis:srem(bot_id.."Admin:Group"..msg.chat_id_, text:match("^تنزيل ادمن (%d+)$"))
@@ -4299,7 +4299,7 @@ elseif text and text:match("^رفع مميز (%d+)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end 
 if not Constructor(msg) and redis:get(bot_id.."Status:Cheking:Seted"..msg.chat_id_) then 
@@ -4312,7 +4312,7 @@ elseif text and text:match("^تنزيل مميز (%d+)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:srem(bot_id.."Vip:Group"..msg.chat_id_, text:match("^تنزيل مميز (%d+)$") )
@@ -4321,7 +4321,7 @@ elseif text and text:match("^حظر (%d+)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 if not Constructor(msg) and redis:get(bot_id.."Status:Lock:Ban:Group"..msg.chat_id_) then 
@@ -4349,7 +4349,7 @@ elseif text and text:match("^الغاء حظر (%d+)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 if tonumber(text:match("^الغاء حظر (%d+)$") ) == tonumber(bot_id) then
@@ -4363,7 +4363,7 @@ elseif text and text:match("^كتم (%d+)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 if Rank_Checking(text:match("^كتم (%d+)$"), msg.chat_id_) == true then
@@ -4380,7 +4380,7 @@ elseif text and text:match("^الغاء كتم (%d+)$") and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 redis:srem(bot_id.."Silence:User:Group"..msg.chat_id_,text:match("^الغاء كتم (%d+)$") )
@@ -4972,7 +4972,7 @@ elseif text ==("تثبيت") and msg.reply_to_message_id_ ~= 0 and Admin(msg) th
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 if redis:sismember(bot_id.."Status:Lock:pin",msg.chat_id_) and not Constructor(msg) then
@@ -4991,7 +4991,7 @@ elseif text == "الغاء التثبيت" and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 if redis:sismember(bot_id.."Status:Lock:pin",msg.chat_id_) and not Constructor(msg) then
@@ -5135,12 +5135,6 @@ f:write(test)
 f:close()
 sendDocument(msg.chat_id_, msg.id_,'./Link_Groups.txt', '\nLink_Groups.txt')
 elseif text == "الرابط" then 
-local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
-data = JSON.decode(url)
-if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
-return false
-end
 local status_Link = redis:get(bot_id.."Link_Group"..msg.chat_id_)
 if status_Link then
 send(msg.chat_id_, msg.id_,"⌔︙جلب الرابط معطل") 
@@ -5962,7 +5956,7 @@ send(msg.chat_id_, msg.id_,[[
 ⌔︙`#game` » عدد المجوهرات
 ⌔︙`#AddMem` » عدد الجهات
 ⌔︙`#Description` » تعليق الصوره
-⌔︙ قناة الكلايش • @Gverr
+⌔︙ قناة الكلايش • @coxonn
 ]])
 return false  
 elseif text == 'تغير الايدي' and Owner(msg) then 
@@ -6027,12 +6021,6 @@ redis:set(bot_id.."Set:Id:Group"..msg.chat_id_,Text_Rand)
 send(msg.chat_id_, msg.id_,'⌔︙ تم تغير الايدي ارسل ايدي لرؤيته')
 end
 if text == 'ايدي' and tonumber(msg.reply_to_message_id_) == 0 and not redis:get(bot_id..'Status:Lock:Id:Photo'..msg.chat_id_) then
-local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
-data = JSON.decode(url)
-if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
-return false
-end
 tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,taha,success) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 if data.username_ then
@@ -6467,7 +6455,7 @@ elseif text == 'السورس' or text == 'سورس' or text == 'ياسورس'  t
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 send(msg.chat_id_, msg.id_,[[
@@ -6479,7 +6467,7 @@ send(msg.chat_id_, msg.id_,[[
 
 𓂅 . [Source Info ](t.me/X04XX)     
 
-𓂅 . [Kevin iD](t.me/Gverr)     
+𓂅 . [Kevin iD](t.me/coxonn)     
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 𓂅 . [TWS Kevin](t.me/Tsh0bot)     
@@ -6488,7 +6476,7 @@ elseif text == 'الاوامر' and Admin(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 send(msg.chat_id_, msg.id_,[[*
@@ -6500,7 +6488,7 @@ send(msg.chat_id_, msg.id_,[[*
 ⌔︙ارسل { م4 } ← اوامر المنشئين
 ⌔︙ارسل { م5 } ← اوامر مطورين البوت
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔︙قناة البوت ←* @X04XX
+⌔︙قناة البوت ←* 
 ]]) 
 elseif text == 'م1' and Admin(msg) then
 send(msg.chat_id_, msg.id_,[[*
@@ -6536,7 +6524,7 @@ send(msg.chat_id_, msg.id_,[[*
 ⌔︙الجهات
 ⌔︙الاشعارات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔︙قناة البوت ←* @X04XX
+⌔︙قناة البوت ←* 
 ]]) 
 elseif text == 'م2' and Admin(msg) then
 send(msg.chat_id_, msg.id_,[[*
@@ -6575,7 +6563,7 @@ send(msg.chat_id_, msg.id_,[[*
 ⌔︙المطرودين ، البوتات ، الصوره
 ⌔︙الصلاحيات ، الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔︙قناة البوت ←* @X04XX
+⌔︙قناة البوت ←* 
 ]]) 
 elseif text == 'م3' and Owner(msg) then
 send(msg.chat_id_, msg.id_,[[*
@@ -6606,7 +6594,7 @@ send(msg.chat_id_, msg.id_,[[*
 ⌔︙اضف ، حذف ← { رد }
 ⌔︙تنظيف ← { عدد }
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔︙قناة البوت ←* @X04XX
+⌔︙قناة البوت ←* 
 ]]) 
 elseif text == 'م4' and Constructor(msg) then
 send(msg.chat_id_, msg.id_,[[*
@@ -6624,7 +6612,7 @@ send(msg.chat_id_, msg.id_,[[*
 ⌔︙اضف ، حذف ← { امر }
 ⌔︙الاوامر المضافه ، مسح الاوامر المضافه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔︙قناة البوت ←* @X04XX
+⌔︙قناة البوت ←* 
 ]]) 
 elseif text == 'م5' and DeveloperBot(msg)  then
 send(msg.chat_id_, msg.id_,[[*
@@ -6657,13 +6645,13 @@ send(msg.chat_id_, msg.id_,[[*
 ⌔︙اذاعه ، اذاعه بالتوجيه ، اذاعه بالتثبيت
 ⌔︙اذاعه خاص ، اذاعه خاص بالتوجيه 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⌔︙قناة البوت ←* @X04XX
+⌔︙قناة البوت ←* 
 ]]) 
 elseif text == 'الالعاب' then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 send(msg.chat_id_, msg.id_,[[*
@@ -7001,7 +6989,7 @@ if text == 'تفعيل' and DeveloperBot(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 if TypeForChat ~= 'ForSuppur' then
@@ -7069,7 +7057,7 @@ if text == 'تعطيل' and DeveloperBot(msg) then
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -7113,7 +7101,7 @@ if text == 'تفعيل' and not DeveloperBot(msg) and not redis:get(bot_id..'Fre
 local url,res = https.request('https://ahmedcg4.ml/Kevin.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.infoo ~= true then
-send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← { @X04XX }') 
+send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناة البوت \n⌔︙قناة البوت ← {  }') 
 return false
 end
 if TypeForChat ~= 'ForSuppur' then
